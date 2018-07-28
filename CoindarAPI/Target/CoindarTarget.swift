@@ -11,7 +11,7 @@ enum CoindarTarget {
 
 extension CoindarTarget: TargetType {
     var baseURL: URL {
-        return URL(string: "https://coindar.org/api/v2/")!
+        return URL(string: "https://coindar.org/api/v2")!
     }
     
     var path: String {
