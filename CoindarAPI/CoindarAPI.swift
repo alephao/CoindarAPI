@@ -3,6 +3,8 @@
 import Moya
 import Result
 
+public typealias Cancellable = Moya.Cancellable
+
 public class CoindarAPI {
     
     private var provider: MoyaProvider<CoindarTarget>
@@ -11,18 +13,23 @@ public class CoindarAPI {
         let authPlugin = AuthPlugin(token: token)
         provider = MoyaProvider<CoindarTarget>(plugins: [authPlugin])
     }
-    
-//    public func getCoins() {
-//        
-//    }
-//    public func coins(completion: (Result<[Coin], ) -> Void) -> Cancellable {
-//        provider.request(.coins) { result in
-//            switch result {
-//            case .success(let obj): break
-//            case .failure(let err): break
-//            }
-//        }
-//    }
-    
+
+    public func getEvents(params: EventsParams,
+                          onSuccess: @escaping ([Event]) -> Void,
+                          onError: @escaping (Error) -> Void) -> Cancellable {
+        return provider.request(.events(params)) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    let events = try response.map([Event].self, atKeyPath: nil, using: JSONDecoder.snake, failsOnEmptyData: true)
+                    onSuccess(events)
+                } catch {
+                    onError(error)
+                }
+            case .failure(let error):
+                onError(error)
+            }
+        }
+    }
     
 }

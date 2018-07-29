@@ -5,7 +5,7 @@ import Foundation
 public struct Event: Codable {
     public let caption: String
     public let source: URL
-    public let proof: URL
+    public let proof: URL?
     public let datePublic: Date
     public let dateStart: Date
     public let dateEnd: Date?
@@ -20,7 +20,7 @@ extension Event {
         
         caption = try container.decode(String.self, forKey: .caption)
         source = try container.decode(URL.self, forKey: .source)
-        proof = try container.decode(URL.self, forKey: .proof)
+        proof = try? container.decode(URL.self, forKey: .proof)
         datePublic = try container.decode(Date.self, forKey: .datePublic)
         dateStart = try container.decode(Date.self, forKey: .dateStart)
         dateEnd = try? container.decode(Date.self, forKey: .dateEnd)
