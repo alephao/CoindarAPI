@@ -2,13 +2,13 @@
 
 import Foundation
 
-struct EventsParams: Codable {
-    let page: String?
-    let pageSize: String?
-    let filterDateStart: String?
-    let filterDateEnd: String?
-    let filterCoins: String?
-    let filterTags: String?
-    let sortBy: String?
-    let orderBy: String?
+public struct EventsParams: Codable {
+    public let page: String?
+    public let pageSize: String?
+    public let filterDateStart: String?
+    public let filterDateEnd: String?
+    public let filterCoins: String?
+    public let filterTags: String?
+    public let sortBy: String?
+    public let orderBy: String?
 }
