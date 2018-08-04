@@ -32,9 +32,10 @@ public class CoindarAPI {
         }
     }
     
-    public func getCoins(onSuccess: @escaping ([Coin]) -> Void,
+    public func getCoins(progress: @escaping (Double) -> Void,
+                         onSuccess: @escaping ([Coin]) -> Void,
                          onError: @escaping (Error) -> Void) -> Cancellable {
-        return provider.request(.coins) { result in
+        return provider.request(.coins, progress: { progress($0.progress) }) { result in
             switch result {
             case .success(let response):
                 do {
