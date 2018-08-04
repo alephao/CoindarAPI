@@ -13,7 +13,7 @@ public class CoindarAPI {
         let authPlugin = AuthPlugin(token: token)
         provider = MoyaProvider<CoindarTarget>(plugins: [authPlugin])
     }
-
+    
     public func getEvents(params: EventsParams,
                           onSuccess: @escaping ([Event]) -> Void,
                           onError: @escaping (Error) -> Void) -> Cancellable {
@@ -22,6 +22,23 @@ public class CoindarAPI {
             case .success(let response):
                 do {
                     let events = try response.map([Event].self, atKeyPath: nil, using: JSONDecoder.snake, failsOnEmptyData: true)
+                    onSuccess(events)
+                } catch {
+                    onError(error)
+                }
+            case .failure(let error):
+                onError(error)
+            }
+        }
+    }
+    
+    public func getCoins(onSuccess: @escaping ([Coin]) -> Void,
+                         onError: @escaping (Error) -> Void) -> Cancellable {
+        return provider.request(.coins) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    let events = try response.map([Coin].self, atKeyPath: nil, using: JSONDecoder.snake, failsOnEmptyData: true)
                     onSuccess(events)
                 } catch {
                     onError(error)

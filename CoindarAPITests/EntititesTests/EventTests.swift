@@ -19,7 +19,7 @@ class EventTests: XCTestCase {
         // Assert
         XCTAssertEqual(subject?.caption, "Listing on OTCBTC")
         XCTAssertEqual(subject?.source.absoluteString, "https://coindar.org/en/event/oraclechain-oct-listing-on-otcbtc-11299")
-        XCTAssertEqual(subject?.proof.absoluteString, "https://support.otcbtc.com/hc/en-us/articles/360007083571")
+        XCTAssertEqual(subject?.proof?.absoluteString, "https://support.otcbtc.com/hc/en-us/articles/360007083571")
         XCTAssertEqual(subject?.datePublic, formatter.date(from: "2018-7-09 17:23"))
         XCTAssertEqual(subject?.dateStart, formatter.date(from: "2018-7-11 06:00"))
         XCTAssertNil(subject?.dateEnd)
