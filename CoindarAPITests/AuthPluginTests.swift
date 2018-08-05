@@ -45,4 +45,18 @@ class AuthPluginTests: XCTestCase {
         XCTAssertEqual(subject.url?.absoluteString, "https://mywebsite.com/api?a=b&c=d&access_token=hello")
     }
     
+    func testGetEvents() {
+        let e = expectation(description: "tey")
+        let api = CoindarAPI(token: "12266:UmVRMS8y0MeMbcOd4qJ")
+        _ = api.getEvents(params: EventsParams(), onSuccess: { events in
+            XCTAssertTrue(events.count > 0)
+            e.fulfill()
+        }) { error in
+            XCTFail(error.localizedDescription)
+            e.fulfill()
+        }
+        
+        waitForExpectations(timeout: 10, handler: nil)
+    }
+    
 }

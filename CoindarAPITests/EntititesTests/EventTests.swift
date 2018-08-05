@@ -9,7 +9,8 @@ class EventTests: XCTestCase {
         // Arrange
         let data = TestHelper.data("event", withExtension: "json")
         let decoder = JSONDecoder.snake
-        let formatter = DateFormatter(dateFormat: "yyyy-mm-dd HH:mm")
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-mm-dd HH:mm"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         decoder.dateDecodingStrategy = .formatted(formatter)
         
