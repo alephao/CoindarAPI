@@ -2,7 +2,6 @@
 
 import Moya
 import Result
-import Common
 
 public typealias Cancellable = Moya.Cancellable
 
@@ -22,21 +21,12 @@ public class CoindarAPI {
             switch result {
             case .success(let response):
                 do {
-                    let events = try response.map([Event].self, atKeyPath: nil, using: JSONDecoder.snake, failsOnEmptyData: true)
+                    let events = try response.map([Event].self, atKeyPath: nil, using: JSONDecoder.events, failsOnEmptyData: true)
                     onSuccess(events)
                 } catch {
                     onError(error)
                 }
             case .failure(let error):
-                switch error {
-                case .underlying(_, let resp):
-                    if let statusCode = resp?.statusCode,
-                        let err = NetworkingError.from(statusCode: statusCode) {
-                        onError(err)
-                        return
-                    }
-                default: break
-                }
                 onError(error)
             }
         }
@@ -55,15 +45,6 @@ public class CoindarAPI {
                     onError(error)
                 }
             case .failure(let error):
-                switch error {
-                case .underlying(_, let resp):
-                    if let statusCode = resp?.statusCode,
-                        let err = NetworkingError.from(statusCode: statusCode) {
-                        onError(err)
-                        return
-                    }
-                default: break
-                }
                 onError(error)
             }
         }
@@ -82,15 +63,6 @@ public class CoindarAPI {
                     onError(error)
                 }
             case .failure(let error):
-                switch error {
-                case .underlying(_, let resp):
-                    if let statusCode = resp?.statusCode,
-                        let err = NetworkingError.from(statusCode: statusCode) {
-                        onError(err)
-                        return
-                    }
-                default: break
-                }
                 onError(error)
             }
         }
