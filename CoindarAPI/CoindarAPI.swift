@@ -67,5 +67,23 @@ public class CoindarAPI {
             }
         }
     }
-    
+
+    public func getSocial(coins: [Coin],
+                          onSuccess: @escaping ([Social]) -> Void,
+                          onError: @escaping (Error) -> Void) -> Cancellable {
+        let coinIds = coins.map({ $0.id })
+        return provider.request(.social(coins: coinIds)) { result in
+            switch result {
+            case .success(let response):
+                do {
+                    let socialArray = try response.map([Social].self, atKeyPath: nil, using: JSONDecoder.snake, failsOnEmptyData: true)
+                    onSuccess(socialArray)
+                } catch {
+                    onError(error)
+                }
+            case .failure(let error):
+                onError(error)
+            }
+        }
+    }
 }
