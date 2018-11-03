@@ -8,36 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		27498FED2105E7EF005A51DA /* CoindarAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27498FE32105E7EF005A51DA /* CoindarAPI.framework */; };
-		27498FF22105E7EF005A51DA /* CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27498FF12105E7EF005A51DA /* CoinTests.swift */; };
-		27498FF42105E7F0005A51DA /* CoindarAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 27498FE62105E7EF005A51DA /* CoindarAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27498FFE2105E82A005A51DA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27498FFD2105E82A005A51DA /* TestHelper.swift */; };
-		274990042105E86B005A51DA /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990002105E86B005A51DA /* Coin.swift */; };
-		274990052105E86B005A51DA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990012105E86B005A51DA /* Event.swift */; };
-		274990062105E86B005A51DA /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990022105E86B005A51DA /* Social.swift */; };
-		274990072105E86B005A51DA /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990032105E86B005A51DA /* Tag.swift */; };
-		2749900E2105E8BE005A51DA /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = 2749900A2105E8BE005A51DA /* tags.json */; };
-		2749900F2105E8BE005A51DA /* coins.json in Resources */ = {isa = PBXBuildFile; fileRef = 2749900B2105E8BE005A51DA /* coins.json */; };
-		274990102105E8BE005A51DA /* social.json in Resources */ = {isa = PBXBuildFile; fileRef = 2749900C2105E8BE005A51DA /* social.json */; };
-		274990112105E8BE005A51DA /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 2749900D2105E8BE005A51DA /* events.json */; };
-		274990152105E948005A51DA /* EventsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990122105E947005A51DA /* EventsParams.swift */; };
-		274990162105E948005A51DA /* AuthenticationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990132105E947005A51DA /* AuthenticationPlugin.swift */; };
-		274990172105E948005A51DA /* CoindarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990142105E948005A51DA /* CoindarTarget.swift */; };
-		2749901C2105E9B7005A51DA /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990192105E9B7005A51DA /* URL+Extensions.swift */; };
-		2749901D2105E9B7005A51DA /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749901A2105E9B7005A51DA /* JSONDecoder+Extensions.swift */; };
-		274990202105E9F0005A51DA /* CoindarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749901F2105E9F0005A51DA /* CoindarAPI.swift */; };
-		274990222105F16D005A51DA /* coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 274990212105F16D005A51DA /* coin.json */; };
-		274990242105F248005A51DA /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = 274990232105F248005A51DA /* event.json */; };
-		274990262105F257005A51DA /* social.json in Resources */ = {isa = PBXBuildFile; fileRef = 274990252105F257005A51DA /* social.json */; };
-		274990282105F262005A51DA /* tag.json in Resources */ = {isa = PBXBuildFile; fileRef = 274990272105F262005A51DA /* tag.json */; };
-		2749902B2105F316005A51DA /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749902A2105F316005A51DA /* TagTests.swift */; };
-		2749902D2105F31E005A51DA /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749902C2105F31E005A51DA /* EventTests.swift */; };
-		2749902F2105F328005A51DA /* SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749902E2105F328005A51DA /* SocialTests.swift */; };
-		274990312105FF96005A51DA /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274990302105FF96005A51DA /* DateFormatter+Extensions.swift */; };
-		2749903321060A91005A51DA /* JSONEncoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749903221060A91005A51DA /* JSONEncoder+Extensions.swift */; };
-		2749903621060B0F005A51DA /* JSONDecoderExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749903521060B0F005A51DA /* JSONDecoderExtensionsTests.swift */; };
-		2749903921060C7C005A51DA /* JSONEncoderExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749903821060C7C005A51DA /* JSONEncoderExtensionsTests.swift */; };
-		2749903B21060FC6005A51DA /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749903A21060FC6005A51DA /* URLExtensionsTests.swift */; };
-		2749903D21061542005A51DA /* AuthPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749903C21061542005A51DA /* AuthPluginTests.swift */; };
+		27C8B66F218D6B7C00187603 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B661218D6B7B00187603 /* DateFormatter+Extensions.swift */; };
+		27C8B670218D6B7C00187603 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B662218D6B7B00187603 /* Tag.swift */; };
+		27C8B672218D6B7C00187603 /* CoindarAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C8B664218D6B7B00187603 /* CoindarAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C8B673218D6B7C00187603 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B665218D6B7B00187603 /* Coin.swift */; };
+		27C8B674218D6B7C00187603 /* JSONEncoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B666218D6B7B00187603 /* JSONEncoder+Extensions.swift */; };
+		27C8B675218D6B7C00187603 /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B667218D6B7B00187603 /* Social.swift */; };
+		27C8B676218D6B7C00187603 /* CoindarTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B668218D6B7B00187603 /* CoindarTarget.swift */; };
+		27C8B677218D6B7C00187603 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B669218D6B7B00187603 /* Event.swift */; };
+		27C8B678218D6B7C00187603 /* AuthenticationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B66A218D6B7B00187603 /* AuthenticationPlugin.swift */; };
+		27C8B679218D6B7C00187603 /* CoindarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B66B218D6B7B00187603 /* CoindarAPI.swift */; };
+		27C8B67A218D6B7C00187603 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B66C218D6B7B00187603 /* JSONDecoder+Extensions.swift */; };
+		27C8B67B218D6B7C00187603 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B66D218D6B7C00187603 /* URL+Extensions.swift */; };
+		27C8B67C218D6B7C00187603 /* EventsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B66E218D6B7C00187603 /* EventsParams.swift */; };
+		27C8B68D218D6BBA00187603 /* AuthPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B67E218D6BB900187603 /* AuthPluginTests.swift */; };
+		27C8B68E218D6BBA00187603 /* SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B67F218D6BB900187603 /* SocialTests.swift */; };
+		27C8B68F218D6BBA00187603 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B680218D6BB900187603 /* URLExtensionsTests.swift */; };
+		27C8B690218D6BBA00187603 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B681218D6BB900187603 /* TestHelper.swift */; };
+		27C8B691218D6BBA00187603 /* CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B682218D6BB900187603 /* CoinTests.swift */; };
+		27C8B692218D6BBA00187603 /* JSONDecoderExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B683218D6BB900187603 /* JSONDecoderExtensionsTests.swift */; };
+		27C8B693218D6BBA00187603 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B684218D6BB900187603 /* EventTests.swift */; };
+		27C8B694218D6BBA00187603 /* social.json in Resources */ = {isa = PBXBuildFile; fileRef = 27C8B686218D6BBA00187603 /* social.json */; };
+		27C8B695218D6BBA00187603 /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = 27C8B687218D6BBA00187603 /* event.json */; };
+		27C8B696218D6BBA00187603 /* tag.json in Resources */ = {isa = PBXBuildFile; fileRef = 27C8B688218D6BBA00187603 /* tag.json */; };
+		27C8B697218D6BBA00187603 /* coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 27C8B689218D6BBA00187603 /* coin.json */; };
+		27C8B698218D6BBA00187603 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B68A218D6BBA00187603 /* TagTests.swift */; };
+		27C8B699218D6BBA00187603 /* JSONEncoderExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8B68B218D6BBA00187603 /* JSONEncoderExtensionsTests.swift */; };
 		A639408212B3941E9CB304D0 /* Pods_CoindarAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80A6E10778B2289531A0406 /* Pods_CoindarAPI.framework */; };
 		C40D9C93A3C0EF606C84B6FC /* Pods_CoindarAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B9D00CC47EA6E135380FEE /* Pods_CoindarAPITests.framework */; };
 /* End PBXBuildFile section */
@@ -197,40 +193,36 @@
 		2712A43B21157D3700906B3C /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Result/Result.xcodeproj; sourceTree = "<group>"; };
 		2712A45321157D4700906B3C /* Moya.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Moya.xcodeproj; path = Moya/Moya.xcodeproj; sourceTree = "<group>"; };
 		27498FE32105E7EF005A51DA /* CoindarAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoindarAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27498FE62105E7EF005A51DA /* CoindarAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoindarAPI.h; sourceTree = "<group>"; };
-		27498FE72105E7EF005A51DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27498FEC2105E7EF005A51DA /* CoindarAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoindarAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27498FF12105E7EF005A51DA /* CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTests.swift; sourceTree = "<group>"; };
-		27498FF32105E7F0005A51DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27498FFD2105E82A005A51DA /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
-		274990002105E86B005A51DA /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		274990012105E86B005A51DA /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		274990022105E86B005A51DA /* Social.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
-		274990032105E86B005A51DA /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		2749900A2105E8BE005A51DA /* tags.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
-		2749900B2105E8BE005A51DA /* coins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coins.json; sourceTree = "<group>"; };
-		2749900C2105E8BE005A51DA /* social.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = social.json; sourceTree = "<group>"; };
-		2749900D2105E8BE005A51DA /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
-		274990122105E947005A51DA /* EventsParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsParams.swift; sourceTree = "<group>"; };
-		274990132105E947005A51DA /* AuthenticationPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationPlugin.swift; sourceTree = "<group>"; };
-		274990142105E948005A51DA /* CoindarTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoindarTarget.swift; sourceTree = "<group>"; };
-		274990192105E9B7005A51DA /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
-		2749901A2105E9B7005A51DA /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
-		2749901F2105E9F0005A51DA /* CoindarAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoindarAPI.swift; sourceTree = "<group>"; };
-		274990212105F16D005A51DA /* coin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = coin.json; sourceTree = "<group>"; };
-		274990232105F248005A51DA /* event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
-		274990252105F257005A51DA /* social.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = social.json; sourceTree = "<group>"; };
-		274990272105F262005A51DA /* tag.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tag.json; sourceTree = "<group>"; };
-		2749902A2105F316005A51DA /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
-		2749902C2105F31E005A51DA /* EventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
-		2749902E2105F328005A51DA /* SocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTests.swift; sourceTree = "<group>"; };
-		274990302105FF96005A51DA /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
-		2749903221060A91005A51DA /* JSONEncoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Extensions.swift"; sourceTree = "<group>"; };
-		2749903521060B0F005A51DA /* JSONDecoderExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtensionsTests.swift; sourceTree = "<group>"; };
-		2749903821060C7C005A51DA /* JSONEncoderExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderExtensionsTests.swift; sourceTree = "<group>"; };
-		2749903A21060FC6005A51DA /* URLExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
-		2749903C21061542005A51DA /* AuthPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPluginTests.swift; sourceTree = "<group>"; };
 		27C8B642218D571300187603 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		27C8B661218D6B7B00187603 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Extensions.swift"; path = "Sources/DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		27C8B662218D6B7B00187603 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
+		27C8B663218D6B7B00187603 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		27C8B664218D6B7B00187603 /* CoindarAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoindarAPI.h; path = Sources/CoindarAPI.h; sourceTree = "<group>"; };
+		27C8B665218D6B7B00187603 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coin.swift; path = Sources/Coin.swift; sourceTree = "<group>"; };
+		27C8B666218D6B7B00187603 /* JSONEncoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "JSONEncoder+Extensions.swift"; path = "Sources/JSONEncoder+Extensions.swift"; sourceTree = "<group>"; };
+		27C8B667218D6B7B00187603 /* Social.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Social.swift; path = Sources/Social.swift; sourceTree = "<group>"; };
+		27C8B668218D6B7B00187603 /* CoindarTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoindarTarget.swift; path = Sources/CoindarTarget.swift; sourceTree = "<group>"; };
+		27C8B669218D6B7B00187603 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Sources/Event.swift; sourceTree = "<group>"; };
+		27C8B66A218D6B7B00187603 /* AuthenticationPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationPlugin.swift; path = Sources/AuthenticationPlugin.swift; sourceTree = "<group>"; };
+		27C8B66B218D6B7B00187603 /* CoindarAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoindarAPI.swift; path = Sources/CoindarAPI.swift; sourceTree = "<group>"; };
+		27C8B66C218D6B7B00187603 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "JSONDecoder+Extensions.swift"; path = "Sources/JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		27C8B66D218D6B7C00187603 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URL+Extensions.swift"; path = "Sources/URL+Extensions.swift"; sourceTree = "<group>"; };
+		27C8B66E218D6B7C00187603 /* EventsParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsParams.swift; path = Sources/EventsParams.swift; sourceTree = "<group>"; };
+		27C8B67E218D6BB900187603 /* AuthPluginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthPluginTests.swift; path = Tests/AuthPluginTests.swift; sourceTree = "<group>"; };
+		27C8B67F218D6BB900187603 /* SocialTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialTests.swift; path = Tests/SocialTests.swift; sourceTree = "<group>"; };
+		27C8B680218D6BB900187603 /* URLExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLExtensionsTests.swift; path = Tests/URLExtensionsTests.swift; sourceTree = "<group>"; };
+		27C8B681218D6BB900187603 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestHelper.swift; path = Tests/TestHelper.swift; sourceTree = "<group>"; };
+		27C8B682218D6BB900187603 /* CoinTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinTests.swift; path = Tests/CoinTests.swift; sourceTree = "<group>"; };
+		27C8B683218D6BB900187603 /* JSONDecoderExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDecoderExtensionsTests.swift; path = Tests/JSONDecoderExtensionsTests.swift; sourceTree = "<group>"; };
+		27C8B684218D6BB900187603 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTests.swift; path = Tests/EventTests.swift; sourceTree = "<group>"; };
+		27C8B686218D6BBA00187603 /* social.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = social.json; sourceTree = "<group>"; };
+		27C8B687218D6BBA00187603 /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
+		27C8B688218D6BBA00187603 /* tag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag.json; sourceTree = "<group>"; };
+		27C8B689218D6BBA00187603 /* coin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coin.json; sourceTree = "<group>"; };
+		27C8B68A218D6BBA00187603 /* TagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagTests.swift; path = Tests/TagTests.swift; sourceTree = "<group>"; };
+		27C8B68B218D6BBA00187603 /* JSONEncoderExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncoderExtensionsTests.swift; path = Tests/JSONEncoderExtensionsTests.swift; sourceTree = "<group>"; };
+		27C8B68C218D6BBA00187603 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
 		663B1D73160D4FA17847C874 /* Pods-CoindarAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoindarAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoindarAPITests/Pods-CoindarAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		69EEE7A56189A304A5BDD953 /* Pods-CoindarAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoindarAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoindarAPI/Pods-CoindarAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		C313B3C667DF2BBD6C4E021A /* Pods-CoindarAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoindarAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoindarAPITests/Pods-CoindarAPITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -316,8 +308,9 @@
 			isa = PBXGroup;
 			children = (
 				27C8B642218D571300187603 /* README.md */,
-				27498FE52105E7EF005A51DA /* CoindarAPI */,
-				27498FF02105E7EF005A51DA /* CoindarAPITests */,
+				27C8B660218D6B6100187603 /* CoindarAPI */,
+				27C8B66B218D6B7B00187603 /* CoindarAPI.swift */,
+				27C8B67D218D6B9200187603 /* CoindarAPITests */,
 				27498FE42105E7EF005A51DA /* Products */,
 				BF23D9B57F36E6273342E705 /* Frameworks */,
 				17432C2256C2B9581E751413 /* Pods */,
@@ -333,106 +326,110 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27498FE52105E7EF005A51DA /* CoindarAPI */ = {
+		27C8B660218D6B6100187603 /* CoindarAPI */ = {
 			isa = PBXGroup;
 			children = (
-				274990182105E9A6005A51DA /* Extensions */,
-				274990082105E8A2005A51DA /* Target */,
-				27498FFF2105E857005A51DA /* Entities */,
-				2749901F2105E9F0005A51DA /* CoindarAPI.swift */,
-				27498FE62105E7EF005A51DA /* CoindarAPI.h */,
-				27498FE72105E7EF005A51DA /* Info.plist */,
+				27C8B69C218D6BE000187603 /* Entities */,
+				27C8B69D218D6BF300187603 /* Extensions */,
+				27C8B69B218D6BD600187603 /* Moya */,
+				27C8B69E218D6C7700187603 /* Supporting Files */,
 			);
-			path = CoindarAPI;
+			name = CoindarAPI;
 			sourceTree = "<group>";
 		};
-		27498FF02105E7EF005A51DA /* CoindarAPITests */ = {
+		27C8B67D218D6B9200187603 /* CoindarAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				274990292105F2E0005A51DA /* Resources */,
-				2749903421060AF3005A51DA /* EntititesTests */,
-				2749903721060B12005A51DA /* ExtensionsTests */,
-				2749903C21061542005A51DA /* AuthPluginTests.swift */,
-				27498FFD2105E82A005A51DA /* TestHelper.swift */,
-				27498FF32105E7F0005A51DA /* Info.plist */,
+				27C8B6A1218D6CCB00187603 /* Entities */,
+				27C8B6A2218D6CEC00187603 /* Extensions */,
+				27C8B685218D6BB900187603 /* Resources */,
+				27C8B6A3218D6CFC00187603 /* Supporting Files */,
+				27C8B67E218D6BB900187603 /* AuthPluginTests.swift */,
+				27C8B681218D6BB900187603 /* TestHelper.swift */,
 			);
-			path = CoindarAPITests;
+			name = CoindarAPITests;
 			sourceTree = "<group>";
 		};
-		27498FFF2105E857005A51DA /* Entities */ = {
+		27C8B685218D6BB900187603 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				274990002105E86B005A51DA /* Coin.swift */,
-				274990012105E86B005A51DA /* Event.swift */,
-				274990022105E86B005A51DA /* Social.swift */,
-				274990032105E86B005A51DA /* Tag.swift */,
+				27C8B686218D6BBA00187603 /* social.json */,
+				27C8B687218D6BBA00187603 /* event.json */,
+				27C8B688218D6BBA00187603 /* tag.json */,
+				27C8B689218D6BBA00187603 /* coin.json */,
 			);
-			path = Entities;
+			name = Resources;
+			path = Tests/Resources;
 			sourceTree = "<group>";
 		};
-		274990082105E8A2005A51DA /* Target */ = {
+		27C8B69B218D6BD600187603 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
-				274990092105E8AD005A51DA /* Resources */,
-				274990132105E947005A51DA /* AuthenticationPlugin.swift */,
-				274990142105E948005A51DA /* CoindarTarget.swift */,
-				274990122105E947005A51DA /* EventsParams.swift */,
+				27C8B66A218D6B7B00187603 /* AuthenticationPlugin.swift */,
+				27C8B668218D6B7B00187603 /* CoindarTarget.swift */,
 			);
-			path = Target;
+			name = Moya;
 			sourceTree = "<group>";
 		};
-		274990092105E8AD005A51DA /* Resources */ = {
+		27C8B69C218D6BE000187603 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				2749900B2105E8BE005A51DA /* coins.json */,
-				2749900D2105E8BE005A51DA /* events.json */,
-				2749900C2105E8BE005A51DA /* social.json */,
-				2749900A2105E8BE005A51DA /* tags.json */,
+				27C8B665218D6B7B00187603 /* Coin.swift */,
+				27C8B669218D6B7B00187603 /* Event.swift */,
+				27C8B66E218D6B7C00187603 /* EventsParams.swift */,
+				27C8B667218D6B7B00187603 /* Social.swift */,
+				27C8B662218D6B7B00187603 /* Tag.swift */,
 			);
-			path = Resources;
+			name = Entities;
 			sourceTree = "<group>";
 		};
-		274990182105E9A6005A51DA /* Extensions */ = {
+		27C8B69D218D6BF300187603 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2749901A2105E9B7005A51DA /* JSONDecoder+Extensions.swift */,
-				2749903221060A91005A51DA /* JSONEncoder+Extensions.swift */,
-				274990302105FF96005A51DA /* DateFormatter+Extensions.swift */,
-				274990192105E9B7005A51DA /* URL+Extensions.swift */,
+				27C8B661218D6B7B00187603 /* DateFormatter+Extensions.swift */,
+				27C8B66C218D6B7B00187603 /* JSONDecoder+Extensions.swift */,
+				27C8B666218D6B7B00187603 /* JSONEncoder+Extensions.swift */,
+				27C8B66D218D6B7C00187603 /* URL+Extensions.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
-		274990292105F2E0005A51DA /* Resources */ = {
+		27C8B69E218D6C7700187603 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				274990212105F16D005A51DA /* coin.json */,
-				274990272105F262005A51DA /* tag.json */,
-				274990232105F248005A51DA /* event.json */,
-				274990252105F257005A51DA /* social.json */,
+				27C8B664218D6B7B00187603 /* CoindarAPI.h */,
+				27C8B663218D6B7B00187603 /* Info.plist */,
 			);
-			path = Resources;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2749903421060AF3005A51DA /* EntititesTests */ = {
+		27C8B6A1218D6CCB00187603 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				27498FF12105E7EF005A51DA /* CoinTests.swift */,
-				2749902A2105F316005A51DA /* TagTests.swift */,
-				2749902C2105F31E005A51DA /* EventTests.swift */,
-				2749902E2105F328005A51DA /* SocialTests.swift */,
+				27C8B682218D6BB900187603 /* CoinTests.swift */,
+				27C8B684218D6BB900187603 /* EventTests.swift */,
+				27C8B67F218D6BB900187603 /* SocialTests.swift */,
+				27C8B68A218D6BBA00187603 /* TagTests.swift */,
 			);
-			path = EntititesTests;
+			name = Entities;
 			sourceTree = "<group>";
 		};
-		2749903721060B12005A51DA /* ExtensionsTests */ = {
+		27C8B6A2218D6CEC00187603 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2749903521060B0F005A51DA /* JSONDecoderExtensionsTests.swift */,
-				2749903821060C7C005A51DA /* JSONEncoderExtensionsTests.swift */,
-				2749903A21060FC6005A51DA /* URLExtensionsTests.swift */,
+				27C8B683218D6BB900187603 /* JSONDecoderExtensionsTests.swift */,
+				27C8B68B218D6BBA00187603 /* JSONEncoderExtensionsTests.swift */,
+				27C8B680218D6BB900187603 /* URLExtensionsTests.swift */,
 			);
-			path = ExtensionsTests;
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		27C8B6A3218D6CFC00187603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C8B68C218D6BBA00187603 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		BF23D9B57F36E6273342E705 /* Frameworks */ = {
@@ -454,7 +451,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27498FF42105E7F0005A51DA /* CoindarAPI.h in Headers */,
+				27C8B672218D6B7C00187603 /* CoindarAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,10 +697,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274990112105E8BE005A51DA /* events.json in Resources */,
-				274990102105E8BE005A51DA /* social.json in Resources */,
-				2749900F2105E8BE005A51DA /* coins.json in Resources */,
-				2749900E2105E8BE005A51DA /* tags.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,10 +704,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274990282105F262005A51DA /* tag.json in Resources */,
-				274990262105F257005A51DA /* social.json in Resources */,
-				274990242105F248005A51DA /* event.json in Resources */,
-				274990222105F16D005A51DA /* coin.json in Resources */,
+				27C8B695218D6BBA00187603 /* event.json in Resources */,
+				27C8B694218D6BBA00187603 /* social.json in Resources */,
+				27C8B697218D6BBA00187603 /* coin.json in Resources */,
+				27C8B696218D6BBA00187603 /* tag.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,18 +779,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274990162105E948005A51DA /* AuthenticationPlugin.swift in Sources */,
-				274990152105E948005A51DA /* EventsParams.swift in Sources */,
-				274990312105FF96005A51DA /* DateFormatter+Extensions.swift in Sources */,
-				274990072105E86B005A51DA /* Tag.swift in Sources */,
-				2749903321060A91005A51DA /* JSONEncoder+Extensions.swift in Sources */,
-				274990052105E86B005A51DA /* Event.swift in Sources */,
-				274990172105E948005A51DA /* CoindarTarget.swift in Sources */,
-				2749901C2105E9B7005A51DA /* URL+Extensions.swift in Sources */,
-				274990042105E86B005A51DA /* Coin.swift in Sources */,
-				2749901D2105E9B7005A51DA /* JSONDecoder+Extensions.swift in Sources */,
-				274990062105E86B005A51DA /* Social.swift in Sources */,
-				274990202105E9F0005A51DA /* CoindarAPI.swift in Sources */,
+				27C8B67B218D6B7C00187603 /* URL+Extensions.swift in Sources */,
+				27C8B675218D6B7C00187603 /* Social.swift in Sources */,
+				27C8B679218D6B7C00187603 /* CoindarAPI.swift in Sources */,
+				27C8B674218D6B7C00187603 /* JSONEncoder+Extensions.swift in Sources */,
+				27C8B673218D6B7C00187603 /* Coin.swift in Sources */,
+				27C8B676218D6B7C00187603 /* CoindarTarget.swift in Sources */,
+				27C8B67C218D6B7C00187603 /* EventsParams.swift in Sources */,
+				27C8B678218D6B7C00187603 /* AuthenticationPlugin.swift in Sources */,
+				27C8B67A218D6B7C00187603 /* JSONDecoder+Extensions.swift in Sources */,
+				27C8B670218D6B7C00187603 /* Tag.swift in Sources */,
+				27C8B677218D6B7C00187603 /* Event.swift in Sources */,
+				27C8B66F218D6B7C00187603 /* DateFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,15 +798,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2749903D21061542005A51DA /* AuthPluginTests.swift in Sources */,
-				2749902D2105F31E005A51DA /* EventTests.swift in Sources */,
-				2749903B21060FC6005A51DA /* URLExtensionsTests.swift in Sources */,
-				2749902F2105F328005A51DA /* SocialTests.swift in Sources */,
-				2749903921060C7C005A51DA /* JSONEncoderExtensionsTests.swift in Sources */,
-				2749903621060B0F005A51DA /* JSONDecoderExtensionsTests.swift in Sources */,
-				27498FF22105E7EF005A51DA /* CoinTests.swift in Sources */,
-				2749902B2105F316005A51DA /* TagTests.swift in Sources */,
-				27498FFE2105E82A005A51DA /* TestHelper.swift in Sources */,
+				27C8B698218D6BBA00187603 /* TagTests.swift in Sources */,
+				27C8B68E218D6BBA00187603 /* SocialTests.swift in Sources */,
+				27C8B68D218D6BBA00187603 /* AuthPluginTests.swift in Sources */,
+				27C8B692218D6BBA00187603 /* JSONDecoderExtensionsTests.swift in Sources */,
+				27C8B693218D6BBA00187603 /* EventTests.swift in Sources */,
+				27C8B699218D6BBA00187603 /* JSONEncoderExtensionsTests.swift in Sources */,
+				27C8B68F218D6BBA00187603 /* URLExtensionsTests.swift in Sources */,
+				27C8B690218D6BBA00187603 /* TestHelper.swift in Sources */,
+				27C8B691218D6BBA00187603 /* CoinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -960,7 +953,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CoindarAPI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -989,7 +982,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CoindarAPI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1009,10 +1002,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C313B3C667DF2BBD6C4E021A /* Pods-CoindarAPITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWJVRQ865N;
-				INFOPLIST_FILE = CoindarAPITests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1020,6 +1014,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.lalacode.CoindarAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1029,10 +1024,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 663B1D73160D4FA17847C874 /* Pods-CoindarAPITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWJVRQ865N;
-				INFOPLIST_FILE = CoindarAPITests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -46,12 +46,5 @@ extension CoindarTarget: TargetType {
     
     var headers: [String: String]? { return nil }
     
-    var sampleData: Data {
-        switch self {
-        case .coins: return Data()
-        case .tags: return Data()
-        case .events: return Data()
-        case .social: return Data()
-        }
-    }
+    var sampleData: Data { return Data() }
 }
