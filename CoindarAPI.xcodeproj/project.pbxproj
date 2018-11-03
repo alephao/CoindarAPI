@@ -1002,7 +1002,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C313B3C667DF2BBD6C4E021A /* Pods-CoindarAPITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWJVRQ865N;
@@ -1024,7 +1024,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 663B1D73160D4FA17847C874 /* Pods-CoindarAPITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RWJVRQ865N;

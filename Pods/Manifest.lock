@@ -8,7 +8,7 @@ PODS:
   - Result (3.2.4)
 
 DEPENDENCIES:
-  - Moya
+  - Moya (~> 11.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -21,6 +21,6 @@ SPEC CHECKSUMS:
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 025683abff51556263538b11adf1f8202111f8a4
+PODFILE CHECKSUM: a7d27cbf8fb59ca419b5087e7c0949e5c4ff6f41
 
 COCOAPODS: 1.5.3

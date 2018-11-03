@@ -1,7 +1,21 @@
 # CoindarAPI
 
-[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
-[![Xcode 10.0+](https://img.shields.io/badge/Xcode-10.0+-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![CI Status](https://img.shields.io/travis/alaphao/CoindarAPI.svg?style=flat)](https://travis-ci.org/alaphao/CoindarAPI)
+[![Version](https://img.shields.io/cocoapods/v/CoindarAPI.svg?style=flat)](https://cocoapods.org/pods/CoindarAPI)
+[![License](https://img.shields.io/cocoapods/l/CoindarAPI.svg?style=flat)](https://cocoapods.org/pods/CoindarAPI)
+[![Platform](https://img.shields.io/cocoapods/p/CoindarAPI.svg?style=flat)](https://cocoapods.org/pods/CoindarAPI)
 
-CoindarAPI is a wrapper around  the [Coindar API](https://coindar.org/en/api) written in Swift
+A wrapper around the [Coindar API](https://coindar.org/en/api) written in Swift
+
+## Installation
+
+CoindarAPI is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'CoindarAPI'
+```
+
+## License
+
+CoindarAPI is available under the MIT license. See the LICENSE file for more info.
