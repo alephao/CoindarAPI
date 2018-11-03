@@ -1,0 +1,2 @@
+scheme "CoindarAPI"
+clean true

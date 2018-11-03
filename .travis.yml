@@ -1,0 +1,9 @@
+os: osx
+language: swift
+xcode_project: CoindarAPI.xcodeproj
+xcode_scheme: CoindarAPI
+osx_image: xcode10
+install:
+  - bundle update
+script:
+  - bundle exec fastlane scan
