@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'CoindarAPI'
-  s.version = '1.1.0'
+  s.version = '1.1.1'
   s.license = { :type => 'MIT', :file => "LICENSE" }
   s.summary = 'A wrapper around Coindar API'
   s.homepage = 'https://github.com/alaphao/CoindarAPI'
