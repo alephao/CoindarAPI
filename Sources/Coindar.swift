@@ -5,7 +5,7 @@ import Result
 
 public typealias Cancellable = Moya.Cancellable
 
-public class CoindarAPI {
+public class Coindar {
     
     private var provider: MoyaProvider<CoindarTarget>
     
