@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'CoindarAPI'
-  s.version = '1.1.5'
+  s.version = '1.1.6'
   s.license = { :type => 'MIT', :file => "LICENSE" }
   s.summary = 'A wrapper around Coindar API'
   s.homepage = 'https://github.com/alaphao/CoindarAPI'
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
 
-  s.dependency "Moya", "~> 12.0.1"
+  s.dependency "Moya", "~> 13.0.0"
 end
