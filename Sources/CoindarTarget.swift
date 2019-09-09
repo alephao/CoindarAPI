@@ -1,5 +1,6 @@
 //  Copyright © 2018 Aleph Retamal. All rights reserved.
 
+import Foundation
 import Moya
 
 enum CoindarTarget {
@@ -13,7 +14,7 @@ extension CoindarTarget: TargetType {
     var baseURL: URL {
         return URL(string: "https://coindar.org/api/v2")!
     }
-    
+
     var path: String {
         switch self {
         case .coins: return "/coins"
@@ -22,9 +23,9 @@ extension CoindarTarget: TargetType {
         case .social: return "/social"
         }
     }
-    
+
     var method: Moya.Method { return .get }
-    
+
     var task: Moya.Task {
         switch self {
         case .coins: return .requestPlain
@@ -43,8 +44,8 @@ extension CoindarTarget: TargetType {
         case .social(let coins): return .requestParameters(parameters: ["coins": coins], encoding: URLEncoding.queryString)
         }
     }
-    
+
     var headers: [String: String]? { return nil }
-    
+
     var sampleData: Data { return Data() }
 }

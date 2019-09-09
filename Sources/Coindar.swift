@@ -1,23 +1,24 @@
 //  Copyright © 2018 Lalacode. All rights reserved.
 
+import Foundation
 import Moya
 
 public typealias Cancellable = Moya.Cancellable
 
 open class Coindar {
-    
+
     private var provider: MoyaProvider<CoindarTarget>
 
     private lazy var requestWithProgress = { [provider] (f: @escaping (Double) -> Void) in
         return curryRequest(provider.request)(.none)({ f($0.progress) })
     }
     private lazy var request = curryRequest(provider.request)(.none)(.none)
-    
+
     public init(token: String) {
         let authPlugin = AuthPlugin(token: token)
         provider = MoyaProvider<CoindarTarget>(plugins: [authPlugin])
     }
-    
+
     open func getEvents(params: EventsParams,
                         onSuccess: @escaping ([Event]) -> Void,
                         onError: @escaping (Error) -> Void) -> Cancellable {
@@ -30,7 +31,7 @@ open class Coindar {
             onError: onError
         )
     }
-    
+
     open func getCoins(progress: @escaping (Double) -> Void,
                        onSuccess: @escaping ([Coin]) -> Void,
                        onError: @escaping (Error) -> Void) -> Cancellable {
@@ -42,7 +43,7 @@ open class Coindar {
             onError: onError
         )
     }
-    
+
     open func getTags(progress: @escaping (Double) -> Void,
                       onSuccess: @escaping ([Tag]) -> Void,
                       onError: @escaping (Error) -> Void) -> Cancellable {
@@ -54,7 +55,7 @@ open class Coindar {
             onError: onError
         )
     }
-    
+
     open func getSocial(coins: [Coin],
                         onSuccess: @escaping ([Social]) -> Void,
                         onError: @escaping (Error) -> Void) -> Cancellable {
