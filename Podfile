@@ -1,12 +1,11 @@
 platform :ios, '10.0'
 
+use_frameworks!
+
 target 'CoindarAPI' do
-  use_frameworks!
+  pod 'Moya', '~> 14.0.0-beta.1'
+end
 
-  pod 'Moya', '~> 13.0.0'
-
-  target 'CoindarAPITests' do
-    inherit! :search_paths
-  end
-
+target 'CoindarAPITests' do
+  pod 'Moya', '~> 14.0.0-beta.1'
 end

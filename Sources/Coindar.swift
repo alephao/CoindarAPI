@@ -1,7 +1,6 @@
 //  Copyright © 2018 Lalacode. All rights reserved.
 
 import Moya
-import Result
 
 public typealias Cancellable = Moya.Cancellable
 
