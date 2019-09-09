@@ -1,6 +1,6 @@
 # CoindarAPI
 
-[![CI Status](https://img.shields.io/travis/alaphao/CoindarAPI.svg?style=flat)](https://travis-ci.org/alaphao/CoindarAPI)
+[![CI Status](https://img.shields.io/travis/alephao/CoindarAPI.svg?style=flat)](https://travis-ci.org/alephao/CoindarAPI)
 [![Version](https://img.shields.io/cocoapods/v/CoindarAPI.svg?style=flat)](https://cocoapods.org/pods/CoindarAPI)
 [![License](https://img.shields.io/cocoapods/l/CoindarAPI.svg?style=flat)](https://cocoapods.org/pods/CoindarAPI)
 [![Platform](https://img.shields.io/cocoapods/p/CoindarAPI.svg?style=flat)](https://cocoapods.org/pods/CoindarAPI)
