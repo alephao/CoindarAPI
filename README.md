@@ -34,12 +34,27 @@ func getSocial(coins: [Coin], onSuccess: ([Social]) -> Void, onError: (Error) ->
 
 ## Installation
 
-CoindarAPI is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+CoindarAPI is available through [CocoaPods](https://cocoapods.org) and [Swift Package Manager](https://swift.org/package-manager/).
+
+### Cocoapods
+Simply add the following line to your `Podfile`:
 
 ```ruby
 pod 'CoindarAPI'
 ```
+
+### Swift Package Manager
+#### Through Xcode UI (Xcode 11+)
+
+Go to _File -> Swift Packages -> Add Package Dependency..._ and enter package repository URL https://github.com/alephao/CoindarAPI.git, then follow the instructions.
+
+#### Without Xcode
+
+Simply add the following as a dependency to your `Package.swift`, under dependencies:
+```swift
+.package(url: "https://github.com/alephao/CoindarAPI.git", .upToNextMajor(from: "1.0.0"))
+```
+then specify "CoindarAPI" as a dependency of the Target in which you wish to use CoindarAPI.
 
 ## License
 
