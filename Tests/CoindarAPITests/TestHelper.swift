@@ -4,11 +4,11 @@ import Foundation
 
 class TestHelper {
     class func bundle() -> Bundle {
-        return Bundle(for: self)
+        .module
     }
     
     class func url(_ name: String, withExtension: String) -> URL {
-        return bundle().url(forResource: name, withExtension: withExtension)!
+        bundle().url(forResource: name, withExtension: withExtension)!
     }
     
     class func data(_ name: String, withExtension: String) -> Data {

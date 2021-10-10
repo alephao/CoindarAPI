@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
 
-  s.dependency "Moya", "~> 14.0.0"
+  s.dependency "Moya", "~> 15.0.0"
 end
