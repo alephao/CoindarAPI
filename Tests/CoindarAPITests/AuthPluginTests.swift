@@ -7,12 +7,12 @@ import Moya
 class AuthPluginTests: XCTestCase {
     
     struct TestTarget: TargetType {
-        var baseURL: URL { return URL(string: "https://mywebsite.com")! }
-        var path: String { return "/api" }
-        var method: Moya.Method { return .get }
-        var sampleData: Data { return Data() }
-        var task: Task { return .requestPlain }
-        var headers: [String : String]? { return nil }
+        var baseURL: URL { URL(string: "https://mywebsite.com")! }
+        var path: String { "/api" }
+        var method: Moya.Method { .get }
+        var sampleData: Data { Data() }
+        var task: Task { .requestPlain }
+        var headers: [String : String]? { nil }
     }
     
     func testPluginOnUrlWithNoQueryItems() {
