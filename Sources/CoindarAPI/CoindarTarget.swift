@@ -12,7 +12,7 @@ enum CoindarTarget {
 
 extension CoindarTarget: TargetType {
     var baseURL: URL {
-        return URL(string: "https://coindar.org/api/v2")!
+        URL(string: "https://coindar.org/api/v2")!
     }
 
     var path: String {
@@ -24,7 +24,7 @@ extension CoindarTarget: TargetType {
         }
     }
 
-    var method: Moya.Method { return .get }
+    var method: Moya.Method { .get }
 
     var task: Moya.Task {
         switch self {
@@ -45,7 +45,7 @@ extension CoindarTarget: TargetType {
         }
     }
 
-    var headers: [String: String]? { return nil }
+    var headers: [String: String]? { nil }
 
-    var sampleData: Data { return Data() }
+    var sampleData: Data { Data() }
 }
