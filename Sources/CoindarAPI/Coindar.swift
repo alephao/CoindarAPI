@@ -14,9 +14,20 @@ open class Coindar {
     }
     private lazy var request = curryRequest(provider.request)(.none)(.none)
 
-    public init(token: String) {
+    init(token: String,
+         stubBehavior: @escaping MoyaProvider<CoindarTarget>.StubClosure,
+         endpointClosure: @escaping MoyaProvider<CoindarTarget>.EndpointClosure
+    ) {
         let authPlugin = AuthPlugin(token: token)
-        provider = MoyaProvider<CoindarTarget>(plugins: [authPlugin])
+        provider = MoyaProvider<CoindarTarget>.init(endpointClosure: endpointClosure,
+                                               stubClosure: stubBehavior,
+                                               plugins: [authPlugin])
+    }
+  
+    public convenience init(token: String) {
+        self.init(token: token,
+                  stubBehavior: MoyaProvider.neverStub,
+                  endpointClosure: MoyaProvider.defaultEndpointMapping)
     }
 
     open func getEvents(params: EventsParams,

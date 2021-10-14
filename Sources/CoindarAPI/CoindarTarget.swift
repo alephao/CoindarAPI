@@ -46,6 +46,4 @@ extension CoindarTarget: TargetType {
     }
 
     var headers: [String: String]? { nil }
-
-    var sampleData: Data { Data() }
 }
