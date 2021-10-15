@@ -7,7 +7,7 @@ public typealias Cancellable = Moya.Cancellable
 
 open class Coindar {
 
-    private var provider: MoyaProvider<CoindarTarget>
+    var provider: MoyaProvider<CoindarTarget>
 
     private lazy var requestWithProgress = { [provider] (f: @escaping (Double) -> Void) in
         curryRequest(provider.request)(.none)({ f($0.progress) })
