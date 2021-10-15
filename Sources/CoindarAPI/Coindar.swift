@@ -10,7 +10,7 @@ open class Coindar {
     private var provider: MoyaProvider<CoindarTarget>
 
     private lazy var requestWithProgress = { [provider] (f: @escaping (Double) -> Void) in
-        return curryRequest(provider.request)(.none)({ f($0.progress) })
+        curryRequest(provider.request)(.none)({ f($0.progress) })
     }
     private lazy var request = curryRequest(provider.request)(.none)(.none)
 
@@ -22,7 +22,7 @@ open class Coindar {
     open func getEvents(params: EventsParams,
                         onSuccess: @escaping ([Event]) -> Void,
                         onError: @escaping (Error) -> Void) -> Cancellable {
-        return executeRequest(
+        executeRequest(
             request(
                 .events(params)
             ),
@@ -35,7 +35,7 @@ open class Coindar {
     open func getCoins(progress: @escaping (Double) -> Void,
                        onSuccess: @escaping ([Coin]) -> Void,
                        onError: @escaping (Error) -> Void) -> Cancellable {
-        return executeRequest(
+        executeRequest(
             requestWithProgress(progress)(
                 .coins
             ),
@@ -47,7 +47,7 @@ open class Coindar {
     open func getTags(progress: @escaping (Double) -> Void,
                       onSuccess: @escaping ([Tag]) -> Void,
                       onError: @escaping (Error) -> Void) -> Cancellable {
-        return executeRequest(
+        executeRequest(
             requestWithProgress(progress)(
                 .tags
             ),
@@ -71,7 +71,7 @@ open class Coindar {
 }
 
 private func curryRequest<A, B, C, D, E>(_ f: @escaping (A, B, C, D) -> E) -> (B) -> (C) -> (A) -> (D) -> E {
-    return { b in return { c in return { a in return { d in return f(a, b, c, d) } } } }
+    { b in return { c in return { a in return { d in return f(a, b, c, d) } } } }
 }
 
 private func executeRequest<T: Decodable>(
@@ -79,18 +79,18 @@ private func executeRequest<T: Decodable>(
     decoder: JSONDecoder = .snake,
     onSuccess: @escaping (T) -> Void,
     onError: @escaping (Error) -> Void)
-    -> Cancellable {
-        return f({ result in
-            switch result {
-            case .success(let response):
-                do {
-                    let events = try response.map(T.self, atKeyPath: nil, using: decoder, failsOnEmptyData: true)
-                    onSuccess(events)
-                } catch {
-                    onError(error)
-                }
-            case .failure(let error):
+-> Cancellable {
+    f({ result in
+        switch result {
+        case .success(let response):
+            do {
+                let events = try response.map(T.self, atKeyPath: nil, using: decoder, failsOnEmptyData: true)
+                onSuccess(events)
+            } catch {
                 onError(error)
             }
-        })
+        case .failure(let error):
+            onError(error)
+        }
+    })
 }
